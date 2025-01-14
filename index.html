@@ -74,9 +74,16 @@
             margin-bottom: 20px;
         }
 
+        .projects{
+            display: flex;                /* Flexbox para alinhamento */
+            flex-wrap: wrap;              /* Permite que os cards se movam para a próxima linha, se necessário */
+            justify-content: space-between; /* Espaço entre os cards */
+            gap: 20px;    
+        }
         .project {
             display: inline-block;
             width: 30%;
+            height: 600px;
             margin: 10px;
             box-sizing: border-box;
             background-color: #3a3a3a;
@@ -87,7 +94,10 @@
 
         .project img {
             width: 100%;
+            height: 300px;
             border-radius: 8px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
         }
 
         .project h3 {
@@ -153,6 +163,12 @@
             background-color: #f5664d;
             transform: scale(1.05);
         }
+
+        .contact a {
+            color: #f5664d;
+           
+        }
+
         footer {
             background-color: #1a1a1a;
             color: #eaeaea;
@@ -208,15 +224,15 @@
         <h2>Meus Projetos</h2>
         <div class="project">
                 <img src="sorteio.jpeg" alt="Projeto 1">
-                <h3>Sorteio</h3>
-                <p>Uma aplicação web para realizar sorteios de forma interativa, com suporte a áudio e feedback por voz.</p>
+                <h3>Sorteio <br>(Em andamento)</h3>
+                <p>Uma aplicação web que realiza sorteios de nomes inseridos pelo usuário e anuncia o ganhador utilizando uma voz sintetizada. A interface é intuitiva, oferecendo uma experiência interativa e dinâmica. Ideal para sorteios de eventos, promoções ou atividades informais, facilitando o processo de escolha de forma rápida e envolvente. Em breve poderá acessar essa aplicação.</p>
             </a>
         </div>
         
         <div class="project">
             <img src="curso.jpeg" alt="Projeto 2">
-            <h3>Em andamento</h3>
-            <p>Estou criando um curso sobre Como Ganhar Dinheiro Online, com estratégias práticas para ajudar pessoas a gerar renda pela internet. Será ideal para iniciantes e quem busca ampliar seus conhecimentos em negócios digitais, marketing de afiliados, vendas e muito mais. Em breve, trarei mais detalhes!.</p>
+            <h3>Curso Online <br>(Em andamento)</h3>
+            <p>Estou criando um curso sobre <br> Como Ganhar Dinheiro Online, com <br>estratégias práticas para ajudar pessoas a gerar renda pela internet. Será ideal para iniciantes e quem busca ampliar seus conhecimentos em negócios digitais, marketing de afiliados, vendas e muito mais. Em breve, trarei esse projeto com mais detalhes!.</p>
         </div>
        
         </div>
@@ -254,16 +270,18 @@
 
     <section id="contact" class="section contact">
         <h2>Contato</h2>
-        <p>Fone: 14 99103-1753.
-        
-        </p> Meu gmail: wesleykallelprofissional@gmail.com
-
-        </p>
-        <a href="mailto:seunome@dominio.com">Enviar Email</a>
+        <p>Entre em contato através dos canais:</p>
+        <p>Telefone/WhatsApp: (14) 99103-1753.
+        <br>
+        <br>
+        <a href="https://github.com/WesleyKallel" target="_blank" rel="external">GitHub: https://github.com/WesleyKallel</a> 
+        <br>
+        <br>
+        <a href="mailto:wesleykallelprofissional@gmail.com">Enviar Email</a>
     </section>
 
     <footer>
-        <p>&copy; 2024 Meu Portfólio - <a href="https://github.com/WesleyKallel">GitHub</a> 
+        <p>&copy; 2024 Meu Portfólio
     </footer>
 
 </body>
