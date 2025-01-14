@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seu Nome">
+    <title>Portfólio</title>
+    <link href="foto.jpg" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #eaeaea;
+        }
+
+        header {
+            background-color: #2d2d2d;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #eaeaea;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ff6347;
+        }
+
+        .about-me, .projects, .contact {
+            background-color: #2d2d2d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .about-me:hover, .projects:hover, .contact:hover {
+            transform: translateY(-10px);
+        }
+
+        .about-me img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            box-sizing: border-box;
+            background-color: #3a3a3a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin-top: 15px;
+            color: #ff6347;
+        }
+        
+        .courses {
+            background-color: #2d2d2d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap; /* Permite quebrar linha se necessário */
+            gap: 20px; /* Espaçamento entre os cursos */
+            justify-content: center; /* Centraliza os cursos na seção */
+        }
+
+        .course:hover {
+            transform: scale(1.08);
+        }
+        .courses .course {
+            flex: 1 1 calc(30% - 20px); /* Ajusta largura de cada curso */
+            max-width: calc(30% - 20px);
+            margin: 0 auto; /* Centraliza caso necessário */
+            background-color: #3a3a3a;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Alinha o conteúdo dentro do curso */
+                }
+
+        .courses .course h3 {
+            color: #ff6347;
+        }
+
+        .courses .certificates {
+            background-color: #3a3a3a;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .courses .certificates h3 {
+            color: #ff6347;
+        }
+
+        .btn-download {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #f54c2e;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            align-self: center; /* Centraliza o botão horizontalmente */
+        }
+
+        .btn-download:hover {
+            background-color: #f5664d;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #eaeaea;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .project {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Wesley Kallel</h1>
+        <p>Desenvolvedor</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#projects">Projetos</a>
+        <a href="#courses">Cursos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <section id="about" class="section about-me"> 
+        <h2>Sobre Mim</h2>
+        <img src="foto.jpg" alt="Minha Foto">
+        <p>Olá, meu nome é Wesley Kallel e sou apaixonado por programação e investimentos. Tenho experiência com o pacote Office, especialmente no uso de planilhas de Excel, e estou sempre em busca de aprender coisas novas. Tenho interesse em trade e ações, e gosto de me aprofundar nesse universo. Adoro solucionar problemas, seja no desenvolvimento de soluções tecnológicas ou explorando novos conceitos no mercado financeiro. Acredito que a curiosidade e o aprendizado constante são fundamentais para o meu crescimento pessoal e profissional.</p>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Meus Projetos</h2>
+        <div class="project">
+                <img src="sorteio.jpeg" alt="Projeto 1">
+                <h3>Sorteio</h3>
+                <p>Uma aplicação web para realizar sorteios de forma interativa, com suporte a áudio e feedback por voz.</p>
+            </a>
+        </div>
+        
+        <div class="project">
+            <img src="curso.jpeg" alt="Projeto 2">
+            <h3>Em andamento</h3>
+            <p>Estou criando um curso sobre Como Ganhar Dinheiro Online, com estratégias práticas para ajudar pessoas a gerar renda pela internet. Será ideal para iniciantes e quem busca ampliar seus conhecimentos em negócios digitais, marketing de afiliados, vendas e muito mais. Em breve, trarei mais detalhes!.</p>
+        </div>
+       
+        </div>
+    </section>
+
+    <section id="courses" class="section courses">
+        <h2>Meus Cursos</h2>
+        <div class="course">
+            <h3>Educação Financeira | Projeto Young Minds </h3>
+            <p>Eu aprendi sobre: a importância da gestão financeira pessoal, abordando tópicos como orçamento, poupança, investimentos e a diferença entre ativos e passivos. O curso também destacou a importância de tomar decisões financeiras conscientes, entender os riscos envolvidos e desenvolver hábitos saudáveis de consumo. Ao final, você adquiriu conhecimentos para planejar e controlar suas finanças, promovendo maior segurança e independência financeira.</p>
+        </div>
+        <div class="course">
+            <h3>Programa Acessuas Trabalho | Secretaria do Bem-Estar Social (12 horas)</h3>
+            <p>Eu aprendi sobre: políticas públicas voltadas à inclusão social e ao desenvolvimento profissional de indivíduos em situação de vulnerabilidade. O curso abordou estratégias para o acesso ao mercado de trabalho, a importância da capacitação profissional, o desenvolvimento de habilidades pessoais e sociais, e o papel do serviço público no apoio à empregabilidade. Ao final, você adquiriu conhecimentos sobre como promover a inserção de pessoas em programas de apoio à qualificação e empregabilidade.</p>
+        </div>
+        <div class="course">
+            <h3>Python - Santander | Open Academy (8 horas)</h3>
+            <p>Aprendi sobre fundamentos de Python, incluindo variáveis, tipos de dados, loops, funções e manipulação de arquivos. O curso também abordou técnicas para automatizar tarefas e resolver problemas práticos, fornecendo uma base para aplicar Python em projetos de programação.</p>
+        </div>
+        <div class="course">
+            <h3>Jovem Office - Wise | Projeto Farol ( ago/2024 - Em andamento)</h3>
+            <p>Estou aprendendo a programar em Python, com foco em requisições a APIs, estruturas de dados (listas, dicionários), controle de fluxo e manipulação de arquivos. Explorou também a criação de interfaces gráficas e web usando Flask e Tkinter. O curso abordou boas práticas de programação, como ambientes virtuais, uso do Git para controle de versões e exportação de aplicações para executáveis. Além disso, aprendeu a usar ferramentas de IA como ChatGPT e CLAUDE IA para auxiliar na produção de código, criar portfólios web, e gerar README.md com IA Generativa.</p>
+        </div>
+
+        <div class="certificates">
+            <h3>Certificados</h3>
+            <p>Aqui você encontra o certificados dos cursos mencionados.</p>
+            <a href="certificados/CERTIFICADO 3.pdf" target="_blank" class="btn-download">Educação Financeira| Young Minds</a>
+            <a href="certificados/certificado 2.pdf" target="_blank" class="btn-download"> Acessuas| Secretaria do Bem-Estar Social</a>
+            <a href="certificados/Python_Santander.pdf" target="_blank" class="btn-download">Python-Santander</a>
+            <a href="#courses" target="_blank" class="btn-download">Jovem Office-Wise |Projeto Farol <br>(Curso em andamento)</a>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="section contact">
+        <h2>Contato</h2>
+        <p>Fone: 14 99103-1753.
+        
+        </p> Meu gmail: wesleykallelprofissional@gmail.com
+
+        </p>
+        <a href="mailto:seunome@dominio.com">Enviar Email</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio - <a href="https://github.com/WesleyKallel">GitHub</a> 
+    </footer>
+
+</body>
+</html>
